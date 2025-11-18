@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html  lang ="vi">
+    <head>
+        <title>Murach's Java Servlets and JSP</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="main.css" type="text/css"/>
+    </head>
+    <body>
+        <section>
+            <img src="https://m.media-amazon.com/images/I/31jt+uKkYdL.jpg" alt="Murach's logo">
+            <h1 class='blue'>Survey</h1>
+            <p>If you have a moment, we'd appreciate it if you could fill out this survey</p>
+            
+            <form action="emailList" method="post">
+                <h2 class='blue'>Your information:</h2>
+                <input type="hidden" name="action" value="add">
+
+                <label><b>First Name</b></label>
+                <input type="text" name="firstname" required><br>
+
+                <label><b>Last Name</b></label>
+                <input type="text" name="lastname" required><br>
+
+                <label><b>Email</b></label>
+                <input type="email" name="email" required><br>
+
+                <label><b>Date of Birth</b></label>
+                <input type="text" name="dateofbirth" required><br>
+                
+                
+                <h2 class='blue'> How did you hear about us?</h2>
+                
+                <section class="nodown">
+                    <input type="radio" name="hear" id="search" value="Search">Search engine
+                </section>
+
+                <section class="nodown">
+                    <input type="radio" name="hear" id="word" value="Word"> Word of mouth
+                </section>
+
+                <section class="nodown">
+                    <input type="radio" name="hear" id="social" value="Social Media"> Social Media
+                </section>
+
+                <section class="nodown">
+                    <input type="radio" name="hear" id="other" value="Other"> Other
+                </section>
+
+                                
+                <h2 class="blue">Would you like to recieve announcements about new CDs and special offers?</h2>
+                
+
+                <input type="checkbox" name="askmail" id="yes" value="yes"> YES, i'd like that
+                <br><!-- comment -->
+                
+                <input type="checkbox" name="askmail" id="yesandmail" value="Yes and mail"> YES, please send me email announcement
+                <br>
+                
+                <section class="nodown">
+                    <p class ="nodown">Please contact me by: </p>
+                        <select name="contactoptions" id="contactoptions">
+                        <option value="emailorpostal"> Email or postal mail</option>
+                        <option value="email"> Email only</option>
+                        <option value="postal"> Postal mail only</option>
+                    </select><br>
+                    
+                </section>
+                <br>
+                
+                <label>&nbsp;</label>
+                <input type="submit" value="Submit" id="submit">
+            
+        </form>
+        </section>
+        
+    </body>
+</html>
